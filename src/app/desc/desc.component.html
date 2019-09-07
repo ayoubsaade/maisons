@@ -1,0 +1,116 @@
+<head>
+    <title>Description</title>
+</head>
+
+
+<body class="w3-content">
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-white" style="margin-top : 40px">
+
+        <div class="w3-container">
+            <div class="row info-lg">
+                <div class="col-8">
+                    <h3>{{prop.title}} | <a href={{prop.urlRealtor}} class="realtor">Pour plus d'infos</a></h3>
+                    <h4>{{prop.adress}} {{prop.city}}</h4>
+                </div>
+
+                <div class="col-4">
+                    <h4>Prix :</h4>
+                    <h3>{{prop.prix}}</h3>
+                </div>
+            </div>
+            <div class="info-sm">
+                <h3>{{prop.title}} | <a href={{prop.urlRealtor}} class="realtor">Pour plus d'infos</a></h3>
+                <h4>{{prop.adress}} {{prop.city}}</h4>
+                <h4>Prix : <strong>{{prop.prix}}</strong></h4>
+            </div>
+            <br>
+
+            <app-carousel class="info-lg" [prop]="prop"></app-carousel>
+
+
+            <!--Carousel-->
+            <div class="info-sm">
+                <ngb-carousel class="lower" *ngIf="images">
+                    <div *ngFor="let image of images">
+                        <ng-template ngbSlide class="lower">
+                            <img [src]="image" class="lower">
+                        </ng-template>
+                    </div>
+                </ngb-carousel>
+            </div>
+
+            <br>
+            <h4><strong>INFORMATIONS PERTINENTES : </strong></h4>
+            <p>Adresse: {{ prop.adress }}, {{prop.city}}</p>
+            <p *ngIf="prop.EvalMuni">Évaluation municipale : {{prop.EvalMuni}}</p>
+            <p>mls : {{prop.mls}}</p>
+            <hr>
+
+            <div *ngIf="prop.nbMetreCarre || prop.nbSalleBain || prop.nbChambre || prop.AConstruction">
+                <h4><strong>L'ESPACE</strong></h4>
+
+                <div class="w3-row w3-large">
+                    <div class="col-6">
+                        <p *ngIf="prop.AConstruction"><i class="fa fa-home"></i> Année de construction:
+                            {{prop.AConstruction}}</p>
+                    </div>
+                    <div class="col-6">
+                        <p *ngIf="prop.nbMetreCarre"><i class="fa fa-arrows-alt"></i> {{prop.nbMetreCarre}} mètres
+                            carrés
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p *ngIf="prop.nbChambre"><i class="fa fa-fw fa-bed"></i> Chambre: {{prop.nbChambre}}</p>
+
+                    </div>
+                    <div class="col-6">
+                        <p *ngIf="prop.nbSalleBain"><i class="fa fa-fw fa-bath"></i> Salle de bain: {{prop.nbSalleBain}}
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <p (click)="collapsDesc = !collapsDesc" class="sub"><strong>DESCRIPTION</strong></p>
+            <div [ngbCollapse]="collapsDesc" style="padding: 5px">
+                <div *ngFor="let description of prop.Description">
+                    <p>{{description}}</p>
+                </div>
+            </div>
+            <hr>
+
+            <strong>
+                <p (click)="collapsDim = !collapsDim" class="sub">DIMENSIONS</p>
+            </strong>
+            <div [ngbCollapse]="collapsDim">
+                <table>
+                    <tr *ngFor="let arr of prop.Dimensions">
+                        <td>{{arr[0]}}</td>
+                        <td>{{arr[1]}}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+            <strong>
+                <p (click)="collapsCarac = !collapsCarac" class="sub">CARACTÉRISTIQUES</p>
+            </strong>
+            <div [ngbCollapse]="collapsCarac">
+                <table class="tableDetail">
+                    <tbody>
+                        <tr *ngFor="let arr of prop.carac">
+                            <td>{{arr[0]}}</td>
+                            <td>{{arr[1]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+
+        </div>
+
+    </div>
+
+</body>
