@@ -30,12 +30,12 @@ textarea {
   position : relative;
   width : 200px;
   height : 200px;
-  left : 33%;
+  left : 34%;
   border-radius: 50%;
   background-color : lightblue;
   border-style: solid;
   border-width: 4px;
-  border-color : blue;
+  border-color : black;
   cursor: pointer;
 }
 
@@ -50,7 +50,7 @@ i{
 
 @media only screen and (max-width: 700px) { 
   .round{
-    left : 20%;
+    left : 23%;
   }
 
   .col{

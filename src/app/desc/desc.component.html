@@ -27,25 +27,28 @@
             </div>
             <br>
 
-            <app-carousel class="info-lg" [prop]="prop"></app-carousel>
-
-
-            <!--Carousel-->
-            <div class="info-sm">
-                <ngb-carousel class="lower" *ngIf="images">
-                    <div *ngFor="let image of images">
-                        <ng-template ngbSlide class="lower">
-                            <img [src]="image" class="lower">
-                        </ng-template>
-                    </div>
-                </ngb-carousel>
+            <div *ngIf="prop.size > 1; else elseBlock">
+                <app-carousel class="info-lg" [prop]="prop"></app-carousel>
+                <!--Carousel-->
+                <div class="info-sm">
+                    <ngb-carousel class="lower" *ngIf="images">
+                        <div *ngFor="let image of images">
+                            <ng-template ngbSlide class="lower">
+                                <img [src]="image" class="lower">
+                            </ng-template>
+                        </div>
+                    </ngb-carousel>
+                </div>
             </div>
+            <ng-template #elseBlock>
+                <img id="singleImg" src="{{prop.url}}/1.jpg" alt="Image">
+            </ng-template>
 
             <br>
             <h4><strong>INFORMATIONS PERTINENTES : </strong></h4>
             <p>Adresse: {{ prop.adress }}, {{prop.city}}</p>
             <p *ngIf="prop.EvalMuni">Évaluation municipale : {{prop.EvalMuni}}</p>
-            <p>mls : {{prop.mls}}</p>
+            <p *ngIf="prop.mls">mls : {{prop.mls}}</p>
             <hr>
 
             <div *ngIf="prop.nbMetreCarre || prop.nbSalleBain || prop.nbChambre || prop.AConstruction">
@@ -73,41 +76,47 @@
                 <hr>
             </div>
 
-            <p (click)="collapsDesc = !collapsDesc" class="sub"><strong>DESCRIPTION</strong></p>
-            <div [ngbCollapse]="collapsDesc" style="padding: 5px">
-                <div *ngFor="let description of prop.Description">
-                    <p>{{description}}</p>
+            <div *ngIf="prop.Description">
+                <p (click)="collapsDesc = !collapsDesc" class="sub"><strong>DESCRIPTION</strong></p>
+                <div [ngbCollapse]="collapsDesc" style="padding: 5px">
+                    <div *ngFor="let description of prop.Description">
+                        <p>{{description}}</p>
+                    </div>
                 </div>
-            </div>
-            <hr>
-
-            <strong>
-                <p (click)="collapsDim = !collapsDim" class="sub">DIMENSIONS</p>
-            </strong>
-            <div [ngbCollapse]="collapsDim">
-                <table>
-                    <tr *ngFor="let arr of prop.Dimensions">
-                        <td>{{arr[0]}}</td>
-                        <td>{{arr[1]}}</td>
-                    </tr>
-                </table>
+                <hr>
             </div>
 
-            <hr>
-            <strong>
-                <p (click)="collapsCarac = !collapsCarac" class="sub">CARACTÉRISTIQUES</p>
-            </strong>
-            <div [ngbCollapse]="collapsCarac">
-                <table class="tableDetail">
-                    <tbody>
-                        <tr *ngFor="let arr of prop.carac">
+            <div *ngIf="prop.Dimensions">
+                <strong>
+                    <p (click)="collapsDim = !collapsDim" class="sub">DIMENSIONS</p>
+                </strong>
+                <div [ngbCollapse]="collapsDim">
+                    <table>
+                        <tr *ngFor="let arr of prop.Dimensions">
                             <td>{{arr[0]}}</td>
                             <td>{{arr[1]}}</td>
                         </tr>
-                    </tbody>
-                </table>
+                    </table>
+                </div>
+                <hr>
             </div>
-            <hr>
+
+            <div *ngIf="prop.carac">
+                <strong>
+                    <p (click)="collapsCarac = !collapsCarac" class="sub">CARACTÉRISTIQUES</p>
+                </strong>
+                <div [ngbCollapse]="collapsCarac">
+                    <table class="tableDetail">
+                        <tbody>
+                            <tr *ngFor="let arr of prop.carac">
+                                <td>{{arr[0]}}</td>
+                                <td>{{arr[1]}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+            </div>
 
         </div>
 

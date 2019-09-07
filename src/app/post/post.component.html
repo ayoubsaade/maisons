@@ -10,7 +10,7 @@
 
     <div class="info">
         <h3 (click)="clicked()" class="link">{{adress}}</h3>
-        <p>{{city}} | <a href={{urlMap}}>Voir la carte</a></p>
+        <p>{{city}} | <a href={{urlMap}} *ngIf="urlMap">Voir la carte</a></p>
         <p>Type : {{type}}</p>
 
         <hr>

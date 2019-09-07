@@ -12,7 +12,7 @@ export class PropertiesService {
       'title': 'Marie-Victorin',
 
       'sellType': 'Édifice commercial',
-      'adress': '336B route marie-victorin',
+      'adress': '336B Route Marie-Victorin',
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/dxRb8PhJ2k7n7PjS7',
       'prix': "3300$/mois +TPS/TVQ",
@@ -43,12 +43,12 @@ export class PropertiesService {
 
       'AConstruction': 1957,
       'EvalMuni': "290 700$",
-      'mls': 21848329,
-      'urlRealtor': "https://www.realtor.ca/immobilier/20664125/d%C3%A9tail-d%C3%A9tail-336b-route-marie-victorin-saint-pierre-les-becquets",
+      'mls': 26567826,
+      'urlRealtor': "https://www.realtor.ca/immobilier/21001639/d%C3%A9tail-d%C3%A9tail-336a-342-route-marie-victorin-saint-pierre-les-becquets",
 
-      'size': 11,
-      'url': "assets/les_bequets/",
-      'Description': ["Location d'une bâtisse commercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
+      'size': 17,
+      'url': "assets/les_bequets_housing/",
+      'Description': ["Location d'une bâtisse com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
       'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
 
       'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
@@ -57,6 +57,28 @@ export class PropertiesService {
   ]
   vendre = [
     {
+      'id': 18,
+      'title': 'Saint-Pierre-Les-Becquets',
+
+      'sellType': 'Commercial, Résidentiel',
+      'adress': '336 - 342 Route Marie-Victorin',
+      'city': "336 - 342 Route Marie-Victorin, Saint-Pierre-Les-Becquets, G0X 2Z0",
+      'urlMap': 'https://goo.gl/maps/X2iEDzNTFaniTPET6',
+      'prix': "349 000$",
+      'nbMetreCarre': 2647,
+
+      'EvalMuni': "290 700 $",
+      'mls': 10018283,
+      'urlRealtor': 'https://www.realtor.ca/immobilier/21001631/2-chambre-unifamiliale-triplex-336-342-route-marie-victorin-saint-pierre-les-becquets',
+
+      'size': 17,
+      'url': 'assets/les_bequets_housing/',
+      'Description': ["Location d'une bâtisse com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
+      'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
+
+      'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
+
+    },{
       'id': 1,
       'title': 'Peninsula',
 
@@ -323,6 +345,64 @@ export class PropertiesService {
 
       'carac': [['Approvisionnement en eau', 'Aucun'], ['Particularités', 'Rue privée'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']]
 
+    },{
+      'id' : 15,
+      'title' : "Val-Morin",
+      'sellType': 'Terrain vacant',
+      'adress': "22e Avenue",
+      'city': "22e Avenue, Val-Morin (Laurentides), J0T2R0",
+      'urlMap': 'https://maps.google.com?q=%2022e%20Avenue%20J0T2R0',
+      'prix': "6 000$",
+      'nbMetreCarre': 643.2,
+
+      'EvalMuni': "13 400 $",
+      'mls': 12780751,
+      'urlRealtor': "https://www.realtor.ca/immobilier/20888519/terrain-vague-22e-avenue-val-morin",
+
+      'size': 1,
+      'url': "assets/vacant/",
+      'Description': ["Terrain non constructible, zone humide selon l'urbaniste de la ville","Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
+
+      'Dimensions': [['Terrain superficie', '643.2 MC'], ['Terrain dim.', '20.6x31 M'], ['Terrain dim.', 'Irrégulier']],
+
+      'carac': [['Approvisionnement en eau', 'Aucun'], ['Particularités', 'Rue privée'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']]
+
+    },{
+      'id' : 16,
+      'title' : "Laval Pont Viau",
+      'sellType': 'Terrain vacant',
+      'adress': "Boul des Laurentides",
+      'city': "Laval Pont Viau, Boul des Laurentides",
+      'prix': "3 500$",
+      'nbMetreCarre': 40.9,
+
+      'EvalMuni': "3 000$",
+      'size': 1,
+      'url': "assets/vacant/",
+    },{
+      'id' : 17,
+      'title' : "Laval St Francois",
+      'sellType': 'Terrain vacant',
+      'adress': "Montee Masson",
+      'city': "Laval St Francois, Montee Masson",
+      'prix': "1 200$",
+      'nbMetreCarre': 124.3,
+
+      'EvalMuni': "1 500$",
+      'size': 1,
+      'url': "assets/vacant/",
+    },{
+      'id' : 18,
+      'title' : "Pointe Calumet",
+      'sellType': 'Terrain vacant',
+      'adress': "16E avenue",
+      'city': "	16E avenue, Pointe Calumet",
+      'prix': "2 000$",
+      'nbMetreCarre': 908,
+
+      'EvalMuni': "2 500$",
+      'size': 1,
+      'url': "assets/vacant/",
     }
 
   ]
