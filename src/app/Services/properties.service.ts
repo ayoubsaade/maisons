@@ -16,7 +16,7 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/dxRb8PhJ2k7n7PjS7',
       'prix': "3300$/mois +TPS/TVQ",
-      'nbMetreCarre': 2647,
+      'nbMetreCarre': 245.9,
 
       'AConstruction': 1957,
       'EvalMuni': "290 700$",
@@ -39,7 +39,7 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/dxRb8PhJ2k7n7PjS7',
       'prix': "3750$/mois +TPS/TVQ",
-      'nbMetreCarre': 2647,
+      'nbMetreCarre': 245.9,
 
       'AConstruction': 1957,
       'EvalMuni': "290 700$",
@@ -65,7 +65,7 @@ export class PropertiesService {
       'city': "336 - 342 Route Marie-Victorin, Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/X2iEDzNTFaniTPET6',
       'prix': "349 000$",
-      'nbMetreCarre': 2647,
+      'nbMetreCarre': 245.9,
 
       'EvalMuni': "290 700 $",
       'mls': 10018283,
@@ -89,7 +89,7 @@ export class PropertiesService {
       'prix': "179 000$",
       'nbChambre': 3,
       'nbSalleBain': 1,
-      'nbMetreCarre': 9461,
+      'nbMetreCarre': 878.9,
 
       'EvalMuni': "179 700 $",
       'mls': 28785090,
@@ -112,7 +112,7 @@ export class PropertiesService {
       'prix': "79 000$",
       'nbChambre': 2,
       'nbSalleBain': 1,
-      'nbMetreCarre': 12486,
+      'nbMetreCarre': 1160,
 
       'AConstruction': 1969,
       'EvalMuni': "56 000 $",
@@ -176,7 +176,7 @@ export class PropertiesService {
       'prix': "90 000$",
       'nbChambre': 3,
       'nbSalleBain': 2,
-      'nbMetreCarre': 5950,
+      'nbMetreCarre': 552.8,
 
       'AConstruction': 1925,
       'EvalMuni': "115 200 $",
