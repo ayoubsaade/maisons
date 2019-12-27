@@ -16,7 +16,7 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/dxRb8PhJ2k7n7PjS7',
       'prix': "3300$/mois +TPS/TVQ",
-      'nbMetreCarre': 245.9,
+      'nbMetreCarre': 2647,
 
       'AConstruction': 1957,
       'EvalMuni': "290 700$",
@@ -39,7 +39,7 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/dxRb8PhJ2k7n7PjS7',
       'prix': "3750$/mois +TPS/TVQ",
-      'nbMetreCarre': 245.9,
+      'nbMetreCarre': 2647,
 
       'AConstruction': 1957,
       'EvalMuni': "290 700$",
@@ -65,7 +65,7 @@ export class PropertiesService {
       'city': "336 - 342 Route Marie-Victorin, Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/X2iEDzNTFaniTPET6',
       'prix': "349 000$",
-      'nbMetreCarre': 245.9,
+      'nbMetreCarre': 2647,
 
       'EvalMuni': "290 700 $",
       'mls': 10018283,
@@ -156,6 +156,7 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/cbacnPPDr3ZEE9JA7',
       'prix': "25 000$",
+      'nbMetreCarre': 1045,
 
       'mls': 12874911,
       'urlRealtor': "https://www.realtor.ca/immobilier/20626450/terrain-vague-1-route-marie-victorin-saint-pierre-les-becquets",
