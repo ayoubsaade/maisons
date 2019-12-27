@@ -73,7 +73,7 @@ export class PropertiesService {
 
       'size': 17,
       'url': 'assets/les_bequets_housing/',
-      'Description': ["Location d'une bâtisse com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
+      'Description': ["Location d'une bâtisse commercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
       'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
 
       'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
@@ -86,7 +86,7 @@ export class PropertiesService {
       'adress': '51 Ch. Peninsula',
       'city': "Saint-Adolphe-d'Howard (Laurentides), J0T2B0",
       'urlMap': 'https://www.google.com/maps?q=51+Ch.+Peninsula+J0T2B0',
-      'prix': "149 000$",
+      'prix': "179 000$",
       'nbChambre': 3,
       'nbSalleBain': 1,
       'nbMetreCarre': 9461,
@@ -147,27 +147,6 @@ export class PropertiesService {
       'Dimensions': [["Terrain superficie", "22 725 PC"], ["Terrain dim.", "302' X 62'"], ["Terrain dim.", "Irrégulier"]],
 
       'carac': [["Zonage", "Agricole, Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Municipalité"]]
-    }, {
-      'id': 6,
-      'title': "Manseau",
-
-      'sellType': 'Terrain vacant',
-      'adress': "1 Rue St-Alphonse",
-      'city': "Manseau, G0X 1V0",
-      'urlMap': 'https://goo.gl/maps/x91W4F3SYYnQn9PX6',
-      'prix': "3 200$",
-      'nbMetreCarre': 1161,
-
-      'EvalMuni': "1 200$",
-      'mls': 28716528,
-      'urlRealtor': "https://www.realtor.ca/immobilier/20626472/terrain-vague-1-rue-st-alphonse-manseau",
-
-      'size': 3,
-      'url': "assets/manseau/",
-      'Description': ["Terrain agricole pour petit projet de 12 499 pc", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
-      'Dimensions': [['Terrain superficie', '1 161 M2'], ['Terrain dim.', "125' X 99'9''"], ['Terrain dim.', 'Irrégulier']],
-
-      'carac': [["Approvisionnement en eau", "Aucun"], ["Système d'égouts", "Aucun"]]
     }, {
       'id': 7,
       'title': "Les-Becquets",
