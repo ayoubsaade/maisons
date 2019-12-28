@@ -112,7 +112,7 @@ export class PropertiesService {
       'prix': "79 000$",
       'nbChambre': 2,
       'nbSalleBain': 1,
-      'nbMetreCarre': 1160,
+      'nbMetreCarre': 12486,
 
       'AConstruction': 1969,
       'EvalMuni': "56 000 $",
@@ -156,7 +156,6 @@ export class PropertiesService {
       'city': "Saint-Pierre-Les-Becquets, G0X 2Z0",
       'urlMap': 'https://goo.gl/maps/cbacnPPDr3ZEE9JA7',
       'prix': "25 000$",
-      'nbMetreCarre': 1045,
 
       'mls': 12874911,
       'urlRealtor': "https://www.realtor.ca/immobilier/20626450/terrain-vague-1-route-marie-victorin-saint-pierre-les-becquets",
@@ -177,7 +176,7 @@ export class PropertiesService {
       'prix': "90 000$",
       'nbChambre': 3,
       'nbSalleBain': 2,
-      'nbMetreCarre': 552.8,
+      'nbMetreCarre': 5950,
 
       'AConstruction': 1925,
       'EvalMuni': "115 200 $",
