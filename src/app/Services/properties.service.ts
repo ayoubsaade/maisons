@@ -26,7 +26,7 @@ export class PropertiesService {
       'size': 11,
       'url': 'assets/les_bequets/',
       'Description': ["Location d'une bâtisse commercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
-      'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
+      'Dimensions': [["Terrain superficie", "2 646,8 MC"]],
 
       'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
 
@@ -49,7 +49,7 @@ export class PropertiesService {
       'size': 17,
       'url': "assets/les_bequets_housing/",
       'Description': ["Location d'une bâtisse com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
-      'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
+      'Dimensions': [["Terrain superficie", "2 646,8 MC"]],
 
       'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
 
@@ -74,7 +74,7 @@ export class PropertiesService {
       'size': 17,
       'url': 'assets/les_bequets_housing/',
       'Description': ["Location d'une bâtisse commercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
-      'Dimensions': [["Terrain superficie", "2 646,8 PC"]],
+      'Dimensions': [["Terrain superficie", "2 646,8 MC"]],
 
       'carac': [["Fondation", "Béton coulé"], ["Sous-sol", "Aucun"], ["Zonage", "Commercial"], ["Énergie pour le chauffage", "Électricité"], ["Approvisionnement en eau", "Municipalité"], ["Système d'égouts", "Inconnu"]]
 
@@ -88,7 +88,7 @@ export class PropertiesService {
       'urlMap': 'https://www.google.com/maps?q=51+Ch.+Peninsula+J0T2B0',
       'prix': "179 000$",
       'nbChambre': 3,
-      'nbSalleBain': 1,
+      'nbSalleBain': 2,
       'nbMetreCarre': 878.9,
 
       'EvalMuni': "179 700 $",
@@ -98,7 +98,7 @@ export class PropertiesService {
       'size': 16,
       'url': 'assets/peninsula/',
       'Description': ['Propriété situé directement sur le bord du Lac-du-Coeur,lac sans bateau moteur(gaz), la rue Peninsula est vraiment tranquille. Cette propriété possède un garage simple détaché.Certains travaux à prévoir, pour bricoleur.A 15 minutes de St-Sauveur et 10 minutes de Morin Heights.', "L'escalier arrière face au lac a été refait et le puits artésien a été remis en fonction.", 'Inclus : aucunes', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"],
-      'Dimensions': [["Terrain superficie", "9461 PC"], ["Terrain dim.", "28.98x36.36 M"], ["Terrain dim.", "Irrégulier"]],
+      'Dimensions': [["Terrain superficie", "878.9 MC"], ["Terrain dim.", "28.98x36.36 M"], ["Terrain dim.", "Irrégulier"]],
 
       'carac': [['Particularités', "Bordé à l'eau, Embarquation sans moteur seulement"], ['Armoires', 'Bois'], ['Mode de chauffage', 'Plinthes électriques'], ['Approvisionnement en eau', 'Puits artésien'], ['Énergie pour le chauffage', 'Électricité'], ['Foyers-poêles', 'Foyer au bois'], ['Garage', 'Détaché, Simple largeur'], ['Particularités', 'Villégiature/Chalet'], ['Proximité', 'Ski alpin, Ski de fond'], ['Revêtements', 'Vinyle'], ['Stationnement', 'Extérieur, Au garage (2 places)'], ["Système d'égouts", "Champ d'épuration, Fosse septique"], ['Particularités', 'Boisé'], ['Toiture', 'Tôle'], ['Topographie', 'En pente, Plat'], ['Vue', "Sur l'eau"], ['Zonage', 'Résidentiel, Villégiature']]
     }, {
