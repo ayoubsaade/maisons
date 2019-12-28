@@ -5,7 +5,7 @@
 # *** 1) ouvrir git ****
 cd Documents/Millette/WebsiteAA/maisons
 git pull
-
+----------------------------------------------------------------
 # pour send/upload src
 # *** 1) ouvrir git ****
 cd Documents/Millette/WebsiteAA/maisons
