@@ -11,19 +11,19 @@
         <div class="w3-container">
             <div class="row info-lg">
                 <div class="col-8">
-                    <h3>{{prop.title}} | <a href={{prop.urlRealtor}} class="realtor">Pour plus d'infos</a></h3>
-                    <h4>{{prop.adress}} {{prop.city}}</h4>
+                    <h3>{{prop.title[proper.isFrench]}} | <a href={{prop.urlRealtor}} class="realtor">{{wordBank.more_infos[proper.isFrench]}}</a></h3>
+                    <h4>{{prop.adress[proper.isFrench]}}, {{prop.city}}</h4>
                 </div>
 
                 <div class="col-4">
-                    <h4>Prix :</h4>
-                    <h3>{{prop.prix}}</h3>
+                    <h4>{{wordBank.price_title[proper.isFrench]}}:</h4>
+                    <h3>{{prop.prix[proper.isFrench]}}</h3>
                 </div>
             </div>
             <div class="info-sm">
-                <h3>{{prop.title}} | <a href={{prop.urlRealtor}} class="realtor">Pour plus d'infos</a></h3>
-                <h4>{{prop.adress}} {{prop.city}}</h4>
-                <h4>Prix : <strong>{{prop.prix}}</strong></h4>
+                <h3>{{prop.title[proper.isFrench]}} | <a href={{prop.urlRealtor}} class="realtor">{{wordBank.more_infos[proper.isFrench]}}</a></h3>
+                <h4>{{prop.adress[proper.isFrench]}}, {{prop.city}}</h4>
+                <h4>{{wordBank.price_title[proper.isFrench]}} : <strong>{{prop.prix[proper.isFrench]}}</strong></h4>
             </div>
             <br>
 
@@ -45,31 +45,30 @@
             </ng-template>
 
             <br>
-            <h4><strong>INFORMATIONS PERTINENTES : </strong></h4>
-            <p>Adresse: {{ prop.adress }}, {{prop.city}}</p>
-            <p *ngIf="prop.EvalMuni">Évaluation municipale : {{prop.EvalMuni}}</p>
+            <h4><strong>{{wordBank.pertinent_infos[proper.isFrench]}} : </strong></h4>
+            <p>{{wordBank.adress[proper.isFrench]}}: {{ prop.adress[proper.isFrench] }}, {{prop.city}}</p>
+            <p *ngIf="prop.EvalMuni">{{wordBank.eval_muni[proper.isFrench]}} : {{prop.EvalMuni}}</p>
             <p *ngIf="prop.mls">mls : {{prop.mls}}</p>
             <hr>
 
             <div *ngIf="prop.nbMetreCarre || prop.nbSalleBain || prop.nbChambre || prop.AConstruction">
-                <h4><strong>L'ESPACE</strong></h4>
+                <h4><strong>{{wordBank.espace[proper.isFrench]}}</strong></h4>
 
                 <div class="w3-row w3-large">
                     <div class="col-6">
-                        <p *ngIf="prop.AConstruction"><i class="fa fa-home"></i> Année de construction:
+                        <p *ngIf="prop.AConstruction"><i class="fa fa-home"></i>{{wordBank.construction[proper.isFrench]}} :
                             {{prop.AConstruction}}</p>
                     </div>
                     <div class="col-6">
-                        <p *ngIf="prop.nbMetreCarre"><i class="fa fa-arrows-alt"></i> {{prop.nbMetreCarre}} mètres
-                            carrés
+                        <p *ngIf="prop.nbMetreCarre"><i class="fa fa-arrows-alt"></i> {{prop.nbMetreCarre}} {{wordBank.dim_title[proper.isFrench]}}
                         </p>
                     </div>
                     <div class="col-6">
-                        <p *ngIf="prop.nbChambre"><i class="fa fa-fw fa-bed"></i> Chambre: {{prop.nbChambre}}</p>
+                        <p *ngIf="prop.nbChambre"><i class="fa fa-fw fa-bed"></i> {{wordBank.bed_title[proper.isFrench]}}: {{prop.nbChambre}}</p>
 
                     </div>
                     <div class="col-6">
-                        <p *ngIf="prop.nbSalleBain"><i class="fa fa-fw fa-bath"></i> Salle de bain: {{prop.nbSalleBain}}
+                        <p *ngIf="prop.nbSalleBain"><i class="fa fa-fw fa-bath"></i> {{wordBank.bath_title[proper.isFrench]}}: {{prop.nbSalleBain}}
                         </p>
                     </div>
                 </div>
@@ -79,7 +78,7 @@
             <div *ngIf="prop.Description">
                 <p (click)="collapsDesc = !collapsDesc" class="sub"><strong>DESCRIPTION</strong></p>
                 <div [ngbCollapse]="collapsDesc" style="padding: 5px">
-                    <div *ngFor="let description of prop.Description">
+                    <div *ngFor="let description of prop.Description[proper.isFrench]">
                         <p>{{description}}</p>
                     </div>
                 </div>
@@ -92,7 +91,7 @@
                 </strong>
                 <div [ngbCollapse]="collapsDim">
                     <table>
-                        <tr *ngFor="let arr of prop.Dimensions">
+                        <tr *ngFor="let arr of prop.Dimensions[proper.isFrench]">
                             <td>{{arr[0]}}</td>
                             <td>{{arr[1]}}</td>
                         </tr>
@@ -108,7 +107,7 @@
                 <div [ngbCollapse]="collapsCarac">
                     <table class="tableDetail">
                         <tbody>
-                            <tr *ngFor="let arr of prop.carac">
+                            <tr *ngFor="let arr of prop.carac[proper.isFrench]">
                                 <td>{{arr[0]}}</td>
                                 <td>{{arr[1]}}</td>
                             </tr>

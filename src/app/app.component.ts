@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { PropertiesService } from './Services/properties.service';
+import { WordBankService } from './Services/word-bank.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,10 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private router : Router){}
+  constructor(private router : Router, private propService: PropertiesService,
+    private wordBank : WordBankService, private proper : PropertiesService){}
+
+  language = ["Anglais", "French"]
 
   home(){
     this.router.navigate([''])
@@ -19,6 +24,9 @@ export class AppComponent {
   }
   louer(){
     this.router.navigate(['louer'])
+  }
+  changeLanguage(){
+    this.propService.isFrench = 1-this.propService.isFrench;
   }
 
 }

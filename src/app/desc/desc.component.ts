@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PropertiesService } from '../Services/properties.service';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
+import { WordBankService } from '../Services/word-bank.service';
 
 @Component({
   selector: 'app-desc',
@@ -20,7 +21,8 @@ export class DescComponent implements OnInit {
   
   sale : boolean = false;
   
-  constructor(private proper: PropertiesService, private route: ActivatedRoute, public router: Router) {
+  constructor(private proper: PropertiesService, private route: ActivatedRoute, public router: Router,
+    private wordBank : WordBankService) {
     
   }
 

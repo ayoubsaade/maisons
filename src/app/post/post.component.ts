@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { PropertiesService } from '../Services/properties.service';
+import { WordBankService } from '../Services/word-bank.service';
 
 @Component({
   selector: 'app-post',
@@ -19,7 +21,10 @@ export class PostComponent implements OnInit {
   @Input() nbSalleBain: number = undefined;
   @Input() nbMetreCarre: number = undefined;
 
-  constructor(public router: Router) { }
+
+
+  constructor(public router: Router, private propService : PropertiesService, 
+    private wordBank : WordBankService) { }
 
   ngOnInit() {
 

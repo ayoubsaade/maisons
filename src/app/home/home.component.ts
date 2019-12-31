@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PropertiesService } from '../Services/properties.service';
 import { Router } from '@angular/router';
 import { PostComponent } from '../post/post.component'
+import { WordBankService } from '../Services/word-bank.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import { PostComponent } from '../post/post.component'
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private proper : PropertiesService, public router : Router) {  }
+  constructor(private proper : PropertiesService, public router : Router,
+    private wordBank : WordBankService) {  }
 
   ngOnInit() {
   }
