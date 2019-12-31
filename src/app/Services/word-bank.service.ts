@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class WordBankService {
   seeMap = ["Voir la carte", "See the map"]
   price_title = ["Prix", "Price"]
-  dim_title = ["mètres carrés", "square meters"]
+  dim_title = ["pieds carrés", "square feet"]
   bed_title = ["Chambres", "Bedrooms"]
   bath_title = ["Salles de bain", "Bathrooms"]
   more_infos = ["Pour plus d'information", "For more information"]

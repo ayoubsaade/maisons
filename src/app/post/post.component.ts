@@ -19,7 +19,7 @@ export class PostComponent implements OnInit {
   @Input() prix: String = undefined;
   @Input() nbChambre: number = undefined;
   @Input() nbSalleBain: number = undefined;
-  @Input() nbMetreCarre: number = undefined;
+  @Input() nbPiedsCarre: number = undefined;
 
 
 

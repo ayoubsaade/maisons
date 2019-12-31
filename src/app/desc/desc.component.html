@@ -51,7 +51,7 @@
             <p *ngIf="prop.mls">mls : {{prop.mls}}</p>
             <hr>
 
-            <div *ngIf="prop.nbMetreCarre || prop.nbSalleBain || prop.nbChambre || prop.AConstruction">
+            <div *ngIf="prop.nbPiedsCarre || prop.nbSalleBain || prop.nbChambre || prop.AConstruction">
                 <h4><strong>{{wordBank.espace[proper.isFrench]}}</strong></h4>
 
                 <div class="w3-row w3-large">
@@ -60,7 +60,7 @@
                             {{prop.AConstruction}}</p>
                     </div>
                     <div class="col-6">
-                        <p *ngIf="prop.nbMetreCarre"><i class="fa fa-arrows-alt"></i> {{prop.nbMetreCarre}} {{wordBank.dim_title[proper.isFrench]}}
+                        <p *ngIf="prop.nbPiedsCarre"><i class="fa fa-arrows-alt"></i> {{prop.nbPiedsCarre}} {{wordBank.dim_title[proper.isFrench]}}
                         </p>
                     </div>
                     <div class="col-6">
