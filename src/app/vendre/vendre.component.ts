@@ -11,7 +11,7 @@ export class VendreComponent implements OnInit {
 
   vendre: any;
 
-  constructor(private propService: PropertiesService, private router: Router) {
+  constructor(public propService: PropertiesService, private router: Router) {
     this.vendre = propService.vendre
   }
 

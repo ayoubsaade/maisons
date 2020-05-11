@@ -11,8 +11,8 @@ import { WordBankService } from '../Services/word-bank.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private proper : PropertiesService, public router : Router,
-    private wordBank : WordBankService) {  }
+  constructor(public proper : PropertiesService, public router : Router,
+    public wordBank : WordBankService) {  }
 
   ngOnInit() {
   }

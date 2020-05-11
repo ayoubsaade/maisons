@@ -24,28 +24,11 @@ a{
   text-decoration: none;
   font-weight: none;
 }
-
-.realtor{
-  color : blue;
-}
-.realtor:hover{
-  text-decoration: underline;
-}
-
-.lower {
-  width : 100%;
-}
-
-
 body{
   background-color: white;
 }
 br{
   height: 20px;
-}
-
-.mySlides {
-  display: none;
 }
 
 table {
@@ -59,6 +42,32 @@ td {
   color: #666;
   border-bottom: 1px solid #d5d5d5;
   padding: 8px;
+}
+/*
+.relevantInfo, .personnalInfo{
+  display: inline-block;
+}
+
+.relevantInfo{
+  width : 70%;
+}
+.personnalInfo{
+  width : 30%;
+}
+*/
+.realtor{
+  color : blue;
+}
+.realtor:hover{
+  text-decoration: underline;
+}
+
+.lower {
+  width : 100%;
+}
+
+.mySlides {
+  display: none;
 }
 
 .sub {

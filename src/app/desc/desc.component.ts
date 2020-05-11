@@ -21,8 +21,8 @@ export class DescComponent implements OnInit {
   
   sale : boolean = false;
   
-  constructor(private proper: PropertiesService, private route: ActivatedRoute, public router: Router,
-    private wordBank : WordBankService) {
+  constructor(public proper: PropertiesService, private route: ActivatedRoute, public router: Router,
+    public wordBank : WordBankService) {
     
   }
 

@@ -23,8 +23,8 @@ export class PostComponent implements OnInit {
 
 
 
-  constructor(public router: Router, private propService : PropertiesService, 
-    private wordBank : WordBankService) { }
+  constructor(public router: Router, public propService : PropertiesService, 
+    public wordBank : WordBankService) { }
 
   ngOnInit() {
 

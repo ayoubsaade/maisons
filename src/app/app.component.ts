@@ -10,8 +10,8 @@ import { WordBankService } from './Services/word-bank.service';
 })
 export class AppComponent {
 
-  constructor(private router : Router, private propService: PropertiesService,
-    private wordBank : WordBankService, private proper : PropertiesService){}
+  constructor(private router : Router, public propService: PropertiesService,
+    public wordBank : WordBankService, public proper : PropertiesService){}
 
   language = ["Anglais", "French"]
 

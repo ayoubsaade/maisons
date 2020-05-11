@@ -11,7 +11,7 @@ export class LouerComponent implements OnInit {
 
   louer: any;
 
-  constructor(private propService: PropertiesService, private router : Router) {
+  constructor(public propService: PropertiesService, private router : Router) {
     this.louer = propService.louer
   }
 

@@ -21,11 +21,11 @@ export class PropertiesService {
       'AConstruction': 1957,
       'EvalMuni': '290 700 $',
       'mls': 21848329,
-      'urlRealtor': 'https://www.realtor.ca/immobilier/20664125/d%C3%A9tail-d%C3%A9tail-336b-route-marie-victorin-saint-pierre-les-becquets',
+      'urlRealtor': 'https://www.realtor.ca/immobilier/21582242/336b-route-marie-victorin-saint-pierre-les-becquets',
       'size': 11,
       'url': 'assets/les_bequets/',
       'Description': [["Location d'une bâtisse commercial. Grand centre camion avec 4 garages / ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Rental of a commercial building. Large truck center with 4 garages / mechanical workshops with reception, office and storage. Located in the heart of the village of St-Pierre-les-Becquets. ', " Sale without legal warranty of quality, at the buyer's risk and peril "]],
-      'Dimensions': [[['Terrain superficie', '2 646,8 MC']], [['Land area', '2 646.8 MC ']]],
+      'Dimensions': [[['Terrain superficie', '2646.8 PC']], [['Land area', '2646.8 SF ']]],
       'carac': [[['Fondation', 'Béton coulé'], ['Sous-sol', 'Aucun'], ['Zonage', 'Commercial'], ['Énergie pour le chauffage', 'Électricité'], ['Approvisionnement en eau', 'Municipalité'], ["Système d'égouts", 'Municipalité']], [[' Foundation ', ' Poured concrete '], [' Basement ', ' None '], [' Zoning ', ' Commercial '], [' Heating energy ', 'Electricity'], ['Water supply', 'Municipality'], ['Sewage system', 'Municipality']]]
     }, {
       'id': 4,
@@ -39,11 +39,11 @@ export class PropertiesService {
       'AConstruction': 1957,
       'EvalMuni': '290 700 $',
       'mls': 26567826,
-      'urlRealtor': 'https://www.realtor.ca/immobilier/21001639/d%C3%A9tail-d%C3%A9tail-336a-342-route-marie-victorin-saint-pierre-les-becquets',
+      'urlRealtor': 'https://www.realtor.ca/immobilier/21582630/336a-342-route-marie-victorin-saint-pierre-les-becquets',
       'size': 17,
       'url': 'assets/les_bequets_housing/',
       'Description': [["Location d'une bâtisse com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Rental of a building com6031c587719e9cdd02d6af948e7a716c322f3d55ercial, large truck center with 4 garages / mechanical workshops with reception, office and storage. Located in the heart of the village of St-Pierre-les-Becquets. ', " Sale without legal warranty of quality, at the buyer's own risk "]],
-      'Dimensions': [[['Terrain superficie', '2 646,8 MC']], [['Land area', '2,646.8 MC']]],
+      'Dimensions': [[['Terrain superficie', '2646.8 PC']], [['Land area', '2646.8 SF']]],
       'carac': [[['Fondation', 'Béton coulé'], ['Sous-sol', 'Aucun'], ['Zonage', 'Commercial'], ['Énergie pour le chauffage', 'Électricité'], ['Approvisionnement en eau', 'Municipalité'], ["Système d'égouts", 'Municipalité']], [['Foundation', 'Poured concrete'], ['Basement', 'None'], ['Zoning', 'Commercial'], ['Energy for heating ', ' Electricity '], [' Water supply ', ' Municipality '], ['Sewage system', ' Municipality ']]]
     }
   ]
@@ -60,11 +60,11 @@ export class PropertiesService {
       'nbPiedsCarre': 28492.3,
       'EvalMuni': '290 700 $',
       'mls': 10018283,
-      'urlRealtor': 'https://www.realtor.ca/immobilier/21001631/2-chambre-unifamiliale-triplex-336-342-route-marie-victorin-saint-pierre-les-becquets',
+      'urlRealtor': 'https://www.realtor.ca/immobilier/21581509/336-342-route-marie-victorin-saint-pierre-les-becquets',
       'size': 17,
       'url': 'assets/les_bequets_housing/',
       'Description': [["Location d'une bâtisse commercial, grand centre du camion avec 4 garages/ateliers mécaniques avec réception, bureau et entreposage. Située au coeur du village de St-Pierre-les-Becquets. ", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Rental of a commercial building, large truck center with 4 garages / mechanical workshops with reception, office and storage. Located in the heart of the village of St-Pierre-les-Becquets. ', " Sale without legal warranty of quality, at the buyer's own risk "]],
-      'Dimensions': [[['Terrain superficie', '2 646,8 MC']], [['Land area', '2,646.8 MC']]],
+      'Dimensions': [[['Terrain superficie', '2646.8 PC']], [['Land area', '2646.8 SF']]],
       'carac': [[['Fondation', 'Béton coulé'], ['Sous-sol', 'Aucun'], ['Zonage', 'Commercial'], ['Énergie pour le chauffage', 'Électricité'], ['Approvisionnement en eau', 'Municipalité'], ["Système d'égouts", 'Municipalité']], [['Foundation', 'Poured concrete'], ['Basement', 'None'], ['Zoning', 'Commercial'], ['Energy for heating ', ' Electricity '], [' Water supply ', ' Municipality '], ['Sewage system', ' Municipality ']]]
     }, {
       'id': 1,
@@ -83,28 +83,8 @@ export class PropertiesService {
       'size': 16,
       'url': "assets/peninsula/",
       'Description': [['Propriété situé directement sur le bord du Lac-du-Coeur, lac sans bateau moteur (gaz), la rue Peninsula est vraiment tranquille. Cette propriété possède un garage simple détaché. A 15 minutes de St-Sauveur et 10 minutes de Morin Heights.', "L'escalier arrière face au lac a été refait et le puits artésien a été remis en fonction.", 'Inclus : aucunes', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], [' Property located directly on the shore of Lac-du-Coeur, lake without motor boat (gas), rue Peninsula is really quiet. This property has a single detached garage. 15 minutes from St-Sauveur and 10 minutes from Morin Heights. ', 'The rear staircase facing the lake has been redone and the artesian well has been restored to service.', 'Included: none', "Sale without legal warranty quality, at the buyer's own risk "]],
-      'Dimensions': [[['Terrain superficie', '878.9 MC'], ['Terrain dim.', '28.98x36.36 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '878.9 MC'], ['Land dim.', '28 .98x36.36 M '], [' Land dim. ', 'Irregular']]],
+      'Dimensions': [[['Terrain superficie', '9459.6 PC'], ['Terrain dim.', '28.98x36.36 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '9459.6 SF'], ['Land dim.', '28 .98x36.36 M '], [' Land dim. ', 'Irregular']]],
       'carac': [[['Particularités', "Bordé à l'eau, Embarquation sans moteur seulement"], ['Armoires', 'Bois'], ['Mode de chauffage', 'Plinthes électriques'], ['Approvisionnement en eau', 'Puits artésien'], ['Énergie pour le chauffage', 'Électricité'], ['Garage', 'Détaché, Simple largeur'], ['Particularités', 'Villégiature/Chalet'], ['Proximité', 'Ski alpin, Ski de fond'], ['Revêtements', 'Vinyle'], ['Stationnement', 'Extérieur, Au garage (2 places)'], ["Système d'égouts", "Champ d'épuration, Fosse septique"], ['Particularités', 'Boisé'], ['Toiture', 'Tôle'], ['Topographie', 'En pente, Plat'], ['Vue', "Sur l'eau"], ['Zonage', 'Résidentiel, Villégiature']], [['Special features', 'Waterfront, Boat without motor only'], ['Cabinets', 'Wood'], ['Heating mode', 'Electric baseboards'], ['Water supply', 'Artesian well'], ['Heating energy', 'Electricity'], ['Garage', 'Detached, Single width'], ['Special features', ' Vacation / Chalet '], [' Proximity ', ' Alpine skiing, Cross-country skiing '], [' Siding ', ' Vinyl '], [' Parking ', ' Exterior, In the garage ( 2 places) '], ['Sewage system', 'Purification field, Septic tank'], [' Special features', 'Wooded area'], ['Roofing', 'Sheet metal'], ['Topography', ' Sloping, Flat '], [' View ', 'On the water'], [' Zoning ', ' Residential, Vacationing ']]]
-    }, {
-      'id': 2,
-      'title': ['Calixte', 'Calixte'],
-      'sellType': ['Maison de plain-pied', 'Single storey house'],
-      'adress': ['180 Rue Dorilda', '180 Rue Dorilda'],
-      'city': "Saint-Calixte (Lanaudière), J0K1Z0",
-      'urlMap': "https://www.google.com/maps?q=180+Rue+Dorilda+J0K1Z0",
-      'prix': ['59 000 $', '$ 59,000'],
-      'nbChambre': 2,
-      'nbSalleBain': 1,
-      'nbPiedsCarre': 134386.8,
-      'AConstruction': 1969,
-      'EvalMuni': "56 000 $",
-      'mls': 24442001,
-      'urlRealtor': "https://www.realtor.ca/immobilier/20876767/2-chambre-unifamiliale-unifamilial-180-rue-dorilda-saint-calixte",
-      'size': 10,
-      'url': "assets/calixte/",
-      'Description': [['Joli chalet pour se reposer le week-end, près de plusieurs activités hiver comme été.', 'Nouveau revêtement de sol ( planchers flottant) 2018 Nouvelle pompe pour puits 2018 Porte extérieur avant blanche 2018 Toiture + ou- 5 ans', 'Inclus : aucunes', 'Exclus : Les outils', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Nice chalet to rest on weekends, near several winter and summer activities.', 'New floor (floating floors) 2018 New pump for wells 2018 White exterior front door 2018 Roofing + or - 5 years', 'Included: N/A', ' Excluded: Tools', "Sale without legal warranty of quality, at the buyer's own risk "]],
-      'Dimensions': [[['Terrain superficie', '12486 PC'], ['Terrain dim.', '100x124 P'], ['Terrain dim.', 'Irrégulier']], [['Land area', '12486 PC'], ['Land dim.', '100x124 P'], ['Land dim.', 'Irregular']]],
-      'carac': [[['Approvisionnement en eau', 'Puits artésien'], ["Système d'égouts", 'Puits absorbant pour 2 chambres, Fosse septique'], ['Zonage', 'Résidentiel']], [['Water supply', 'Artesian wells'], ['Sewage system', 'Absorbent well for 2 rooms, Septic tank'], ['Zoning', 'Residential']]]
     }, {
       'id': 5,
       'title': ['Febvre', 'Febvre'],
@@ -117,7 +97,7 @@ export class PropertiesService {
       'AConstruction': 2007,
       'EvalMuni': "69 800 $",
       'mls': 16059725,
-      'urlRealtor': "https://www.realtor.ca/immobilier/20626453/d%C3%A9tail-d%C3%A9tail-129-route-marie-victorin-baie-du-febvre",
+      'urlRealtor': "https://www.realtor.ca/immobilier/21581817/129-route-marie-victorin-baie-du-febvre",
       'size': 2,
       'url': "assets/febvre/",
       'Description': [['Endroit stratégique, bâtiment commercial pour entreposage de tout genre.', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], [' Strategic location, commercial building for storage of all kinds. ', "Sale without legal warranty of quality, risks and buyer's perils "]],
@@ -169,7 +149,7 @@ export class PropertiesService {
       'nbPiedsCarre': 78656.0,
       'EvalMuni': "30 500 $",
       'mls': 14685853,
-      'urlRealtor': "https://www.realtor.ca/immobilier/20626452/terrain-vague-1-rue-du-centre-saint-pierre-les-becquets",
+      'urlRealtor': "https://www.realtor.ca/immobilier/21581748/1-rue-du-centre-saint-pierre-les-becquets",
       'size': 1,
       'url': "assets/terrain_bequets/",
       'Description': [["Terrain asphalté idéal pour entretien d'équipement ou stationnement. Situé au coeur de St-Pierre les Becquets.", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Asphalted land ideal for maintenance of equipment or parking. Located in the heart of St-Pierre les Becquets.', " Sale without legal warranty of quality, at the buyer's risk and peril "]],
@@ -190,7 +170,7 @@ export class PropertiesService {
       'size': 1,
       'url': "assets/Saint-Adolphe-d'Howard/",
       'Description': [["Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ["Sale without legal warranty of quality, at the buyer's risk"]],
-      'Dimensions': [[['Terrain superficie', '1564 MC'], ['Terrain dim.', '45.97x35.05 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 1564 MC '], [' Sun field ', '45 .97x35.05 M'], ['Sun field', 'Irregular']]],
+      'Dimensions': [[['Terrain superficie', '16833.3 PC'], ['Terrain dim.', '45.97x35.05 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 16833.3 SF '], [' Sun field ', '45 .97x35.05 M'], ['Sun field', 'Irregular']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']], [['Water supply', 'None'], ['Sewage system', 'None'], ['Zoning', 'Residential']]]
     }, {
       'id': 11,
@@ -207,7 +187,7 @@ export class PropertiesService {
       'size': 2,
       'url': "assets/Héritage/",
       'Description': [["Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ["Sale without legal warranty of quality, at the buyer's risk and peril"]],
-      'Dimensions': [[['Terrain superficie', '5482 MC'], ['Terrain dim.', '50.12x110.1 M'], ['Terrain dim.', 'Irrégulier']], [['Land area ', ' 5482 MC '], [' Sun field ', '50 .12x110.1 M'], ['Sun field', 'Irregular']]],
+      'Dimensions': [[['Terrain superficie', '59002.8 PC'], ['Terrain dim.', '50.12x110.1 M'], ['Terrain dim.', 'Irrégulier']], [['Land area ', '59002.8 SF '], [' Sun field ', '50 .12x110.1 M'], ['Sun field', 'Irregular']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ['Particularités', 'chemin privé, milieu humide,'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']], [['Water supply', 'None'], ['Features', 'private road, wetland,'], ['Sewage system', 'None'], ['Zoning', 'Residential']]]
     }, {
       'id': 12,
@@ -224,7 +204,7 @@ export class PropertiesService {
       'size': 2,
       'url': "assets/Lac-Harel/",
       'Description': [["Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ["Sale without legal warranty of quality, at the buyer's risk and peril"]],
-      'Dimensions': [[['Terrain superficie', '6275 MC'], ['Terrain dim.', '65.41x95 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 6275 MC '], [' Land dim. ', '65 .41x95 M'], ['Sun field', 'Irregular']]],
+      'Dimensions': [[['Terrain superficie', '67537.8 PC'], ['Terrain dim.', '65.41x95 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 67537.8 SF '], [' Land dim. ', '65 .41x95 M'], ['Sun field', 'Irregular']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']], [['Water supply', 'None'], ['Sewage system', 'None'], [' Zoning ', ' Residential ']]]
     }, {
       'id': 13,
@@ -241,7 +221,7 @@ export class PropertiesService {
       'size': 1,
       'url': "assets/flamingo/",
       'Description': [["Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ["Sale without legal warranty of quality, at the buyer's own risk"]],
-      'Dimensions': [[['Terrain superficie', '1591 MC'], ['Terrain dim.', '15.24x88.7 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 1591 MC '], [' Land dim. ', ' 15.24x88.7 M '], [' Sun field ', ' Irregular ']]],
+      'Dimensions': [[['Terrain superficie', '17123.9 PC'], ['Terrain dim.', '15.24x88.7 M'], ['Terrain dim.', 'Irrégulier']], [[' Land area ', ' 17123.9 SF '], [' Land dim. ', ' 15.24x88.7 M '], [' Sun field ', ' Irregular ']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ["Système d'égouts", 'Aucun'], ['Particularités', 'Boisé'], ['Zonage', 'Résidentiel']], [[' Water supply ', ' None '], ['Sewage system', ' None '], [' Special features ', ' Wooded '], [' Zoning ', ' Residential ']]]
     }, {
       'id': 14,
@@ -258,7 +238,7 @@ export class PropertiesService {
       'size': 2,
       'url': "assets/trembles/",
       'Description': [["Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ["Sale without legal warranty of quality, at the buyer's own risk"]],
-      'Dimensions': [[['Terrain superficie', '4994 MC'], ['Terrain dim.', '115.98x32.19 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '4994 MC'], ['Land dim.', '115.98x32.19 M'], ['Sun field', 'Irregular']]],
+      'Dimensions': [[['Terrain superficie', '53750.4 PC'], ['Terrain dim.', '115.98x32.19 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '53750.4 SF'], ['Land dim.', '115.98x32.19 M'], ['Sun field', 'Irregular']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ['Particularités', 'Rue privée'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']], [['Water supply', 'None'], ['Special features', 'Private street'], ['Street system sewers', 'None'], ['Zoning', 'Residential']]]
     }, {
       'id': 15,
@@ -275,7 +255,7 @@ export class PropertiesService {
       'size': 1,
       'url': "assets/vacant/",
       'Description': [["Terrain non constructible, zone humide selon l'urbaniste de la ville", "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], ['Non-constructible land, wetland according to the town planner', 'Sale without legal warranty of quality, at risk and perils of the buyer ']],
-      'Dimensions': [[['Terrain superficie', '643.2 MC'], ['Terrain dim.', '20.6x31 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '643.2 MC'], ['Land dim.', '20 .6x31 M '], [' Land dim. ', ' Irregular ']]],
+      'Dimensions': [[['Terrain superficie', '6922.8 PC'], ['Terrain dim.', '20.6x31 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '6922.8 SF'], ['Land dim.', '20 .6x31 M '], [' Land dim. ', ' Irregular ']]],
       'carac': [[['Approvisionnement en eau', 'Aucun'], ['Particularités', 'Rue privée'], ["Système d'égouts", 'Aucun'], ['Zonage', 'Résidentiel']], [['Water supply', 'None'], ['Special features', 'Private street'], ['Sewage system', 'None'], ['Zoning', 'Residential']]]
     }, {
       'id': 16,
