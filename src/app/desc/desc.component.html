@@ -46,20 +46,21 @@
                 <img id="singleImg" src="{{prop.url}}/1.jpg" alt="Image">
             </ng-template>
 
-            <!-- Relevant information 
-            <div style="margin-top : 10px;">
+            <!-- Relevant information -->
+            <div style="margin-top : 20px;">
+                <h4><strong>{{wordBank.pertinent_infos[proper.isFrench]}} : </strong></h4>
                 <div class="relevantInfo">
-
+                    <p>{{wordBank.adresse[proper.isFrench]}}: {{ prop.adress[proper.isFrench] }}, {{prop.city}}</p>
+                    <p *ngIf="prop.EvalMuni">{{wordBank.eval_muni[proper.isFrench]}} : {{prop.EvalMuni}}</p>
+                    <p *ngIf="prop.mls">mls : {{prop.mls}}</p>
                 </div>
                 <div class="personnalInfo">
                     <img src="assets/proprio2.png" alt="Front Profile Pic">
+                    <p><strong>{{wordBank.contacter[proper.isFrench]}}</strong></p>
+                    <p><i class="fa fa-fw fa-at"></i> <a style="color : #2200cc"
+                            href="mailto:albertayoub@hotmail.com"> albertayoub@hotmail.com</a></p>
+                    <p><i style="transform: rotate(90deg);" class="fa">&#xf095;</i> (514)883-3789</p>
                 </div>
-            </div>-->
-            <div style="margin-top : 20px">
-                <h4><strong>{{wordBank.pertinent_infos[proper.isFrench]}} : </strong></h4>
-                <p>{{wordBank.adresse[proper.isFrench]}}: {{ prop.adress[proper.isFrench] }}, {{prop.city}}</p>
-                <p *ngIf="prop.EvalMuni">{{wordBank.eval_muni[proper.isFrench]}} : {{prop.EvalMuni}}</p>
-                <p *ngIf="prop.mls">mls : {{prop.mls}}</p>
             </div>
 
 

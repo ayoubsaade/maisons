@@ -16,7 +16,7 @@ export class WordBankService {
   espace = ["L'ESPACE", "SPACE"]
   construction = ["Année de construction", "Year of construction"]
   caract = ["CARACTÉRISTIQUES","CHARACTERISTICS"]
-
+  contacter = ["Pour nous contacter", "To contact us"]
   vendre = ["À vendre", "For sale"]
   louer = ["À louer", "For rent"]
   propos = ["À Propos De Nous", "About us"]

@@ -80,7 +80,7 @@ export class PropertiesService {
       'EvalMuni': "179 700 $",
       'mls': 28785090,
       'urlRealtor': "https://www.realtor.ca/immobilier/20876769/3-chambre-unifamiliale-unifamilial-51-ch-peninsula-saint-adolphe-dhoward",
-      'size': 16,
+      'size': 20,
       'url': "assets/peninsula/",
       'Description': [['Propriété situé directement sur le bord du Lac-du-Coeur, lac sans bateau moteur (gaz), la rue Peninsula est vraiment tranquille. Cette propriété possède un garage simple détaché. A 15 minutes de St-Sauveur et 10 minutes de Morin Heights.', "L'escalier arrière face au lac a été refait et le puits artésien a été remis en fonction.", 'Inclus : aucunes', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], [' Property located directly on the shore of Lac-du-Coeur, lake without motor boat (gas), rue Peninsula is really quiet. This property has a single detached garage. 15 minutes from St-Sauveur and 10 minutes from Morin Heights. ', 'The rear staircase facing the lake has been redone and the artesian well has been restored to service.', 'Included: none', "Sale without legal warranty quality, at the buyer's own risk "]],
       'Dimensions': [[['Terrain superficie', '9459.6 PC'], ['Terrain dim.', '28.98x36.36 M'], ['Terrain dim.', 'Irrégulier']], [['Land area', '9459.6 SF'], ['Land dim.', '28 .98x36.36 M '], [' Land dim. ', 'Irregular']]],

@@ -10,6 +10,9 @@ h6 {
 p{
   font-size : 18px;
 }
+i{
+  font-size : 14px;
+}
 
 img{
   width : 200px
@@ -43,18 +46,31 @@ td {
   border-bottom: 1px solid #d5d5d5;
   padding: 8px;
 }
-/*
+
 .relevantInfo, .personnalInfo{
   display: inline-block;
 }
-
 .relevantInfo{
-  width : 70%;
+  width : 60%;
+  vertical-align:top;
 }
 .personnalInfo{
-  width : 30%;
+  width : 40%;
 }
-*/
+.personnalInfo p{
+  width : 100%;
+  text-align: center;
+  margin : 2px;
+  font-size: small;
+}
+.personnalInfo img{
+  display: block;
+  margin-left : auto;
+  margin-right : auto;
+  width : 150px;
+  height : 150px;
+}
+
 .realtor{
   color : blue;
 }
@@ -108,6 +124,10 @@ td {
 @media only screen and (max-width: 700px) { 
   .info-lg{
     display: none;
+  }
+  .relevantInfo, .personnalInfo{
+    display: block;
+    width : 100%;
   }
 }
 
