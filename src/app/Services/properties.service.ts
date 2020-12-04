@@ -65,24 +65,6 @@ export class PropertiesService {
       'Dimensions': [[['Terrain superficie', '2646.8 PC']], [['Land area', '2646.8 SF']]],
       'carac': [[['Fondation', 'Béton coulé'], ['Sous-sol', 'Aucun'], ['Zonage', 'Commercial'], ['Énergie pour le chauffage', 'Électricité'], ['Approvisionnement en eau', 'Municipalité'], ["Système d'égouts", 'Municipalité']], [['Foundation', 'Poured concrete'], ['Basement', 'None'], ['Zoning', 'Commercial'], ['Energy for heating ', ' Electricity '], [' Water supply ', ' Municipality '], ['Sewage system', ' Municipality ']]]
     },  {
-      'id': 5,
-      'title': ['Febvre', 'Febvre'],
-      'sellType': ['Édifice commercial', 'Édifice commercial'],
-      'adress': ['129 Route Marie-Victorin', '129 Route Marie-Victorin'],
-      'city': "Baie-Du-Febvre, J0G 1A0",
-      'urlMap': "https://goo.gl/maps/tjDThZQaJgDfJf89A",
-      'prix': ['58 000 $', '58 000 $ '],
-      'nbPiedsCarre': 22722.8,
-      'AConstruction': 2007,
-      'EvalMuni': "69 800 $",
-      'mls': 27698221,
-      'urlRealtor': "https://www.realtor.ca/immobilier/22083959/129-route-marie-victorin-baie-du-febvre",
-      'size': 12,
-      'url': "assets/febvre/",
-      'Description': [['Endroit stratégique, bâtiment commercial pour entreposage de tout genre.', "Vente sans garantie légale de qualité, aux risques et périls de l'acheteur"], [' Strategic location, commercial building for storage of all kinds. ', "Sale without legal warranty of quality, risks and buyer's perils "]],
-      'Dimensions': [[['Terrain superficie', '22 725 PC'], ['Terrain dim.', "302' X 62'"], ['Terrain dim.', 'Irrégulier']], [['Land area', '22 725 SF '], [' Sun field ', " 302' X 62 '"], [' Sun field ', ' Irregular ']]],
-      'carac': [[['Zonage', 'Agricole, Commercial'], ['Énergie pour le chauffage', 'Électricité'], ['Approvisionnement en eau', 'Municipalité'], ["Système d'égouts", 'Municipalité']], [['Zoning', 'Agricultural, Commercial'], ['Heating energy', 'Electricity'], ['Water supply', 'Municipality'], ['Sewage system', 'Municipality']]]
-    }, {
       'id': 7,
       'title': ['Les-Becquets', 'Les-Becquets'],
       'sellType': ['Terrain vacant', ' Vacant lot '],
