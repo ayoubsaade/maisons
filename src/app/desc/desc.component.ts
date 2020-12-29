@@ -20,23 +20,24 @@ export class DescComponent implements OnInit {
   collapsCarac : boolean = false;
   
   sale : boolean = false;
-  
+
+
   constructor(public proper: PropertiesService, private route: ActivatedRoute, public router: Router,
     public wordBank : WordBankService) {
     
   }
 
   ngOnInit() {
+    
     let found = undefined
     this.routeSub = this.route.params.subscribe(params => {
       found = this.proper.louer.find(function (element) {
-        return element.id == params['id'];
+        return element.id === params['id'];
       });
-
       if (found === undefined) {
         this.sale = true
         found = this.proper.vendre.find(function (element) {
-          return element.id == params['id'];
+          return element.id === params['id'];
         });
       }
     });
@@ -50,7 +51,6 @@ export class DescComponent implements OnInit {
     for(let i = 0; i<this.prop.size; i++){
       this.images.push(this.prop.url + (i+1).toString() + '.jpg')
     }
-
   }
 
   ngOnDestroy() {
