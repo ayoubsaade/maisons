@@ -24,11 +24,24 @@ export class DescComponent implements OnInit {
 
   constructor(public proper: PropertiesService, private route: ActivatedRoute, public router: Router,
     public wordBank : WordBankService) {
-    
-  }
+      if(this.proper.vendre.length == 0){
+        console.log("LOOOLL")
+        this.proper.updateVendre().then((temp) => {
+          this.proper.updateLouer().then((temp) => {
+            this.restOnInit()
+          })
+        })
+      }else{
+        this.restOnInit()
+      }
+    }
 
   ngOnInit() {
     
+  }
+
+  restOnInit(){
+    console.log("Rest on init : ", JSON.parse(JSON.stringify(this.proper.vendre)))
     let found = undefined
     this.routeSub = this.route.params.subscribe(params => {
       found = this.proper.louer.find(function (element) {

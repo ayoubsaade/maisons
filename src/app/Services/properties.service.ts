@@ -9,12 +9,16 @@ export class PropertiesService {
   isFrench = 1; // true --> french ; false --> english
   louer : Array<any> = [];
   vendre : Array<any> = [];
+  VENDRE_HAS_BEEN_FETCHED = false
+  LOUER_HAS_BEEN_FETCHED = false
 
   constructor(private firebaseService : FirebaseService) {
     
     //louer
     this.firebaseService.getPropriete(false).then((data) => {
-      data.forEach(doc => {
+      if(!this.LOUER_HAS_BEEN_FETCHED){
+        this.LOUER_HAS_BEEN_FETCHED = true
+        data.forEach(doc => {
         let temp : Propriete = <Propriete>{...doc.data(), id : doc.id};
 
         temp["prix"] = Number(temp["prix"]).toLocaleString("en") + ' / month + GST ​​/ QST';
@@ -56,15 +60,21 @@ export class PropertiesService {
         });
         this.louer.push(temp);
 
-      });
+        });
+      }
+      
       
     });
+  
 
     //vendre
+    
     this.firebaseService.getPropriete(true).then((data) => {
-      data.forEach(doc => {
+      if(!this.VENDRE_HAS_BEEN_FETCHED){
+        this.VENDRE_HAS_BEEN_FETCHED = true
+        data.forEach(doc => {
         let temp : Propriete = <Propriete>{...doc.data(), id : doc.id};
-
+        
         temp["prix"] = Number(temp["prix"]).toLocaleString("en")
 
         const liste_string_object = ["sellType"]
@@ -109,10 +119,14 @@ export class PropertiesService {
         });
 
         this.vendre.push(temp);
+        console.log("wow from properties")
 
       });
+      }
+      
       
     });
+    
 
     
     //this.genLouer()
@@ -121,6 +135,128 @@ export class PropertiesService {
 
     console.log(this.louer)
 
+  }
+
+  updateLouer() : Promise<boolean>{
+    return new Promise((resolve) => {
+      this.firebaseService.getPropriete(false).then((data) => {
+        if(!this.LOUER_HAS_BEEN_FETCHED){
+          this.LOUER_HAS_BEEN_FETCHED = true
+          data.forEach(doc => {
+          let temp : Propriete = <Propriete>{...doc.data(), id : doc.id};
+  
+          temp["prix"] = Number(temp["prix"]).toLocaleString("en") + ' / month + GST ​​/ QST';
+  
+          const liste_string_object = ["sellType"]
+          
+          liste_string_object.forEach(element => {
+            if(temp[element]){
+              if(temp[element] instanceof Object){
+                temp[element] = [temp[element]["english"], temp[element]["french"]];
+              }else if(typeof(temp[element]) === "string"){
+                temp[element] =  [temp[element],temp[element]];
+              }
+            }
+          });
+  
+          // Description : {"english" : [], "french" : []}
+          temp["Description"] = [temp["Description"]["english"], temp["Description"]["french"]];
+  
+  
+          // Dimensions + carac : {"english" : {}, "french" : {}}
+          const list_tags = ["Dimensions", "carac"];
+          const languages = ["english", "french"]
+          list_tags.forEach(attribut => {
+            let temp1 = [];
+            if(temp[attribut]){
+              languages.forEach(language => {
+                let keys = Object.keys(temp[attribut][language]);
+                let temp2 = [];
+                keys.forEach(key => {
+                  temp2.push([key, temp[attribut][language][key]])
+                });
+                temp1.push(temp2);
+  
+              });
+              temp[attribut] = temp1;
+            }
+            
+          });
+          this.louer.push(temp);
+          
+        });
+        }
+
+        resolve(true);
+      });
+      
+      
+    })
+  }
+
+  updateVendre() : Promise<boolean>{
+    return new Promise((resolve) => {
+      //vendre
+      this.firebaseService.getPropriete(true).then((data) => {
+        if(!this.VENDRE_HAS_BEEN_FETCHED){
+          this.VENDRE_HAS_BEEN_FETCHED = true
+          data.forEach(doc => {
+          let temp : Propriete = <Propriete>{...doc.data(), id : doc.id};
+          
+          temp["prix"] = Number(temp["prix"]).toLocaleString("en")
+
+          const liste_string_object = ["sellType"]
+
+          liste_string_object.forEach(element => {
+            if(temp[element]){
+              if(temp[element] instanceof Object){
+                
+                temp[element] = [temp[element]["english"], temp[element]["french"]];
+              }else if(typeof(temp[element]) === "string"){
+                temp[element] =  [temp[element],temp[element]];
+              }
+            }
+            
+          });
+
+          // Description : {"english" : [], "french" : []}
+          if(temp["Description"]){
+            temp["Description"] = [temp["Description"]["english"], temp["Description"]["french"]];
+          }
+          
+
+          // Dimensions + carac : {"english" : {}, "french" : {}}
+          const list_tags = ["Dimensions", "carac"];
+          const languages = ["english", "french"]
+          list_tags.forEach(attribut => {
+            let temp1 = [];
+            
+            if(temp[attribut]){
+              languages.forEach(language => {
+                let keys = Object.keys(temp[attribut][language]);
+                let temp2 = [];
+                keys.forEach(key => {
+                  temp2.push([key, temp[attribut][language][key]])
+                });
+                temp1.push(temp2);
+
+              });
+              temp[attribut] = temp1;
+            }
+            
+          });
+
+          this.vendre.push(temp);
+          console.log("wow from properties")
+
+        });
+        }
+        
+        resolve(true);
+      });
+      
+      
+    })
   }
 
 
