@@ -9,6 +9,7 @@
     <div class="w3-main w3-white" style="margin-top : 40px">
 
         <div class="w3-container">
+            <!-- Big screen -->
             <div class="row info-lg">
                 <div class="col-8">
                     <h3>{{prop.title}} | <a href={{prop.urlRealtor}}
@@ -21,11 +22,12 @@
                     <h3 class="money">{{prop.prix}}</h3>
                 </div>
             </div>
+            <!-- Phone screen -->
             <div class="info-sm">
                 <h3>{{prop.title}} | <a href={{prop.urlRealtor}}
                         class="realtor">{{wordBank.more_infos[proper.isFrench]}}</a></h3>
                 <h4>{{prop.adress}}, {{prop.city}}</h4>
-                <h4>{{wordBank.price_title}} : <strong>{{prop.prix[proper.isFrench]}}</strong></h4>
+                <h4>{{wordBank.price_title[proper.isFrench]}} : <strong>{{prop.prix}}</strong></h4>
             </div>
             <br>
 
