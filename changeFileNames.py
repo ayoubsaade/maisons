@@ -44,3 +44,4 @@ def main():
         changeFiles(path, filenames)
 
 main()
+input("Done !\n")
